@@ -29,7 +29,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r req.txt  # Убедитесь, что зависимости указаны в этом файле
+          COPY requirements.txt /tmp/requirements.txt
+          pip install -r /tmp/requirements.txt  # Убедитесь, что зависимости указаны в этом файле
 
           - name: Run Script
           run: python Untitled.py  # Укажите путь к вашему скрипту
