@@ -35,5 +35,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt  # Убедитесь, что зависимости указаны в этом файле
 
-          - name: Run Script
-          run: python Untitled.py  # Укажите путь к вашему скрипту
+      - name: Run Script
+        run: python Untitled.py  # Укажите путь к вашему скрипту
