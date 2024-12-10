@@ -5,7 +5,7 @@ name: test Run Python Script Daily
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: '0 0 * * *'  # Запускать каждый день в полночь по UTC
+    - cron: '10 25 * * *'  # Запускать каждый день в полночь по UTC
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
